@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的网页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft Yahei", sans-serif;
+        }
+        body {
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        /* 导航栏 */
+        nav {
+            background: #2563eb;
+            padding: 1rem 5%;
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 24px;
+            font-size: 16px;
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        /* 首页横幅 */
+        .hero {
+            max-width: 1200px;
+            margin: 80px auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #1e293b;
+        }
+        .hero p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .btn {
+            display: inline-block;
+            background: #2563eb;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background: #1d4ed8;
+        }
+        /* 卡片区域 */
+        .cards {
+            max-width: 1200px;
+            margin: 60px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+        .card h3 {
+            margin-bottom: 12px;
+            color: #2563eb;
+        }
+        /* 页脚 */
+        footer {
+            background: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航 -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">我的网站</div>
+            <div class="nav-links">
+                <a href="#home">首页</a>
+                <a href="#about">关于</a>
+                <a href="#service">服务</a>
+                <a href="#contact">联系我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页内容 -->
+    <section class="hero" id="home">
+        <h1>欢迎来到我的网页</h1>
+        <p>这是我做的第一个网页</p>
+        <a href="#about" class="btn">了解更多</a>
+    </section>
+
+    <!-- 卡片模块 -->
+    <section class="cards" id="about">
+        <div class="card">
+            <h3>模块一</h3>
+            <p>简单自我介绍</p>
+        </div>
+        <div class="card" id="service">
+            <h3>模块二</h3>
+            <p>简单介绍个人经历</p>
+        </div>
+        <div class="card">
+            <h3>模块三</h3>
+            <p>简单介绍兴趣爱好</p>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer id="contact">
+        <p>© 2026 我的网页 | 联系邮箱：3126673106@qq.com</p>
+    </footer>
+</body>
+</html>
